@@ -1,0 +1,263 @@
+// ─────────────────────────────────────────────────────────────
+// SITE TEXT — Uzbek (uz, default) and Russian (ru).
+// Keep the same keys in both languages. Product texts are in products.js.
+// ─────────────────────────────────────────────────────────────
+
+export const languages = [
+  { code: 'uz', label: 'UZ', name: 'O‘zbekcha' },
+  { code: 'ru', label: 'RU', name: 'Русский' },
+]
+
+export const translations = {
+  uz: {
+    meta: {
+      title: 'ASNAD Uzbekistan — Bambuk Panellar, Louver va Dekorativ Panellar',
+      description:
+        'ASNAD Uzbekistan: bambuk panellar, dekorativ devor panellari, louver panellari, yashirin eshiklar va tomchi kley. Mahsulotlar va narxlar haqida ma’lumot oling.',
+    },
+    skip: 'Asosiy kontentga o‘tish',
+    nav: {
+      home: 'Bosh sahifa',
+      products: 'Mahsulotlar',
+      why: 'Afzalliklar',
+      about: 'Kompaniya haqida',
+      contact: 'Aloqa',
+      cta: 'Bog‘lanish',
+      open: 'Menyuni ochish',
+      close: 'Menyuni yopish',
+      language: 'Tilni tanlash',
+      mobileNote: 'Mahsulot, narx va mavjudlik bo‘yicha savollaringizga javob beramiz.',
+    },
+    hero: {
+      eyebrow: 'ASNAD — zamonaviy interyer yechimlari',
+      titleTop: 'Makoningizga',
+      titleBottom: 'yangi nazar',
+      text: 'Zamonaviy interyer uchun bambuk panellar, louver tizimlari, dekorativ devor panellari va yashirin eshik yechimlari.',
+      primary: 'Mahsulotlarni ko‘rish',
+      secondary: 'Konsultatsiya olish',
+      location: 'Toshkent · Dombirobod',
+      trade: 'Chakana va ulgurji savdo',
+      categoriesLabel: 'Mahsulot yo‘nalishlari',
+      detailCaption: 'Faktura. Ritm. Soya.',
+    },
+    catalog: {
+      eyebrow: 'Katalog',
+      title: 'Mahsulotlar',
+      intro:
+        'Devor, eshik va montaj uchun materiallar. Narx va mavjudlikni bilish uchun mahsulotni tanlang va bizga yozing.',
+      all: 'Barchasi',
+      filterLabel: 'Kategoriya bo‘yicha saralash',
+      details: 'Batafsil ma’lumot',
+      inquiry: 'So‘rov yuborish',
+      price: 'Narx va mavjudligini aniqlash',
+      empty: 'Bu kategoriyada mahsulot topilmadi.',
+    },
+    modal: {
+      close: 'Yopish',
+      applications: 'Qo‘llanilishi',
+      priceTitle: 'Narx va mavjudligini aniqlash',
+      priceNote: 'Narx, o‘lcham va mavjudlik haqida aniq ma’lumotni WhatsApp yoki telefon orqali beramiz.',
+      whatsapp: 'WhatsApp orqali so‘rash',
+      call: 'Qo‘ng‘iroq qilish',
+      imageNote: 'Rasm interyerdagi qo‘llanilishni namoyish etadi.',
+    },
+    showcase: {
+      eyebrow: 'Kompaniya haqida',
+      title: 'Har bir detal muhim',
+      lead:
+        'ASNAD — Toshkentdagi zamonaviy interyer materiallari brendi. Biz bambuk panellar, dekorativ devor panellari, louver panellari, yashirin eshiklar va tomchi kley taklif qilamiz.',
+      body:
+        'Do‘konimiz Dombirobod stroy bozorida joylashgan. Shaxsiy xaridorlar va biznes mijozlar bilan chakana hamda ulgurji ishlaymiz, mahsulot tanlashda maslahat beramiz.',
+      note: 'Ilhom uchun namunaviy interyerlar',
+    },
+    why: {
+      eyebrow: 'Afzalliklar',
+      title: 'Nega ASNAD?',
+      items: [
+        { title: 'Zamonaviy dizayn', text: 'Interyeringizga mos zamonaviy dekorativ yechimlar.' },
+        { title: 'Mahsulot tanlovi', text: 'Turli interyer uslublari uchun mahsulot kategoriyalari.' },
+        { title: 'Ulgurji va chakana savdo', text: 'Shaxsiy loyiha va biznes ehtiyojlari uchun murojaat qiling.' },
+        { title: 'Maslahat va aloqa', text: 'Kerakli mahsulotni tanlash bo‘yicha ma’lumot oling.' },
+      ],
+    },
+    gallery: {
+      eyebrow: 'Galereya',
+      title: 'Interyer uchun ilhom',
+      intro:
+        'Dekorativ panellar va reykali yuzalar interyerda qanday ko‘rinishiga oid ilhomlantiruvchi misollar. Rasmlar namunaviy bo‘lib, ASNAD buyurtmachilarining loyihalari emas.',
+      open: 'Rasmni kattalashtirish',
+      close: 'Yopish',
+      prev: 'Oldingi rasm',
+      next: 'Keyingi rasm',
+      counter: (i, n) => `${i} / ${n}`,
+    },
+    business: {
+      eyebrow: 'Chakana va ulgurji',
+      title: 'Loyihangiz uchun to‘g‘ri yechimni tanlang',
+      text: 'Kerakli mahsulot, narx va mavjudlik haqida ma’lumot olish uchun biz bilan bog‘laning.',
+      retail: 'Chakana xarid uchun',
+      retailNote: 'Uy, kvartira yoki shaxsiy loyiha uchun',
+      wholesale: 'Ulgurji hamkorlik',
+      wholesaleNote: 'Quruvchilar, dizaynerlar va do‘konlar uchun',
+    },
+    contact: {
+      eyebrow: 'Aloqa',
+      title: 'Biz bilan bog‘laning',
+      intro: 'Mahsulotlar bo‘yicha savollar, narx va yetkazib berish haqidagi so‘rovlar uchun qulay usulni tanlang.',
+      phones: 'Telefon',
+      whatsapp: 'WhatsApp',
+      whatsappAction: 'Yozish',
+      instagram: 'Instagram',
+      telegram: 'Telegram',
+      address: 'Manzil',
+      openMap: 'Xaritada ochish',
+      mapTitle: 'ASNAD joylashuvi xaritada',
+      mapFallback: 'Xarita yuklanmasa, “Xaritada ochish” tugmasidan foydalaning.',
+      note: 'Mahsulot mavjudligi va narxlarini aniqlash uchun iltimos, biz bilan oldindan bog‘laning.',
+      cta: 'WhatsApp’da yozish',
+    },
+    footer: {
+      about:
+        'ASNAD Uzbekistan — bambuk panellar, dekorativ devor panellari, louver panellari, yashirin eshiklar va tomchi kley. Toshkent, Dombirobod stroy bozori.',
+      products: 'Mahsulotlar',
+      contact: 'Aloqa',
+      follow: 'Ijtimoiy tarmoq',
+      rights: (year) => `© ${year} ASNAD Uzbekistan. Barcha huquqlar himoyalangan.`,
+      top: 'Yuqoriga',
+      photos: 'Saytdagi interyer rasmlari namunaviy (Unsplash).',
+    },
+    messages: {
+      general: 'Assalomu alaykum! ASNAD mahsulotlari bo‘yicha maslahat olmoqchiman.',
+      product: (name) => `Assalomu alaykum! ASNAD saytidan ${name} haqida ma’lumot olmoqchiman.`,
+      retail: 'Assalomu alaykum! ASNAD mahsulotlari bo‘yicha chakana xarid va narxlar haqida ma’lumot olmoqchiman.',
+      wholesale: 'Assalomu alaykum! ASNAD mahsulotlari bo‘yicha ulgurji hamkorlik haqida ma’lumot olmoqchiman.',
+    },
+    image: { fallback: 'Rasm yuklanmadi' },
+  },
+
+  ru: {
+    meta: {
+      title: 'ASNAD Uzbekistan — бамбуковые, louver и декоративные стеновые панели',
+      description:
+        'ASNAD Uzbekistan: бамбуковые панели, декоративные стеновые панели, louver-панели, скрытые двери и жидкие гвозди. Узнайте о товарах и ценах.',
+    },
+    skip: 'Перейти к основному содержанию',
+    nav: {
+      home: 'Главная',
+      products: 'Продукция',
+      why: 'Преимущества',
+      about: 'О компании',
+      contact: 'Контакты',
+      cta: 'Связаться',
+      open: 'Открыть меню',
+      close: 'Закрыть меню',
+      language: 'Выбрать язык',
+      mobileNote: 'Ответим на вопросы о товарах, ценах и наличии.',
+    },
+    hero: {
+      eyebrow: 'ASNAD — современные решения для интерьера',
+      titleTop: 'Новый взгляд',
+      titleBottom: 'на пространство',
+      text: 'Бамбуковые панели, louver-системы, декоративные стеновые панели и скрытые двери для современного интерьера.',
+      primary: 'Смотреть продукцию',
+      secondary: 'Получить консультацию',
+      location: 'Ташкент · Домбиробод',
+      trade: 'Розница и опт',
+      categoriesLabel: 'Направления продукции',
+      detailCaption: 'Фактура. Ритм. Тень.',
+    },
+    catalog: {
+      eyebrow: 'Каталог',
+      title: 'Продукция',
+      intro:
+        'Материалы для стен, дверей и монтажа. Чтобы узнать цену и наличие, выберите товар и напишите нам.',
+      all: 'Все',
+      filterLabel: 'Фильтр по категориям',
+      details: 'Подробнее',
+      inquiry: 'Отправить запрос',
+      price: 'Уточнить цену и наличие',
+      empty: 'В этой категории пока нет товаров.',
+    },
+    modal: {
+      close: 'Закрыть',
+      applications: 'Где применяется',
+      priceTitle: 'Уточнить цену и наличие',
+      priceNote: 'Точную информацию о цене, размерах и наличии сообщим в WhatsApp или по телефону.',
+      whatsapp: 'Спросить в WhatsApp',
+      call: 'Позвонить',
+      imageNote: 'Фото показывает пример применения в интерьере.',
+    },
+    showcase: {
+      eyebrow: 'О компании',
+      title: 'Важна каждая деталь',
+      lead:
+        'ASNAD — бренд современных отделочных материалов для интерьера из Ташкента. Мы предлагаем бамбуковые панели, декоративные стеновые панели, louver-панели, скрытые двери и жидкие гвозди.',
+      body:
+        'Наш магазин находится на строительном рынке Домбиробод. Работаем в розницу и оптом — с частными покупателями и бизнесом — и помогаем подобрать подходящий материал.',
+      note: 'Примеры интерьеров для вдохновения',
+    },
+    why: {
+      eyebrow: 'Преимущества',
+      title: 'Почему ASNAD?',
+      items: [
+        { title: 'Современный дизайн', text: 'Современные декоративные решения, которые подходят вашему интерьеру.' },
+        { title: 'Выбор продукции', text: 'Категории товаров для разных стилей интерьера.' },
+        { title: 'Опт и розница', text: 'Обращайтесь как для личного проекта, так и для задач бизнеса.' },
+        { title: 'Консультация и связь', text: 'Получите информацию о выборе подходящего материала.' },
+      ],
+    },
+    gallery: {
+      eyebrow: 'Галерея',
+      title: 'Идеи для интерьера',
+      intro:
+        'Примеры того, как декоративные панели и реечные поверхности выглядят в интерьере. Фотографии приведены для вдохновения и не являются проектами клиентов ASNAD.',
+      open: 'Увеличить фото',
+      close: 'Закрыть',
+      prev: 'Предыдущее фото',
+      next: 'Следующее фото',
+      counter: (i, n) => `${i} / ${n}`,
+    },
+    business: {
+      eyebrow: 'Розница и опт',
+      title: 'Выберите правильное решение для вашего проекта',
+      text: 'Свяжитесь с нами, чтобы узнать о нужном товаре, цене и наличии.',
+      retail: 'Для розничной покупки',
+      retailNote: 'Для дома, квартиры или личного проекта',
+      wholesale: 'Оптовое сотрудничество',
+      wholesaleNote: 'Для строителей, дизайнеров и магазинов',
+    },
+    contact: {
+      eyebrow: 'Контакты',
+      title: 'Свяжитесь с нами',
+      intro: 'Выберите удобный способ связи: вопросы о товарах, ценах и доставке.',
+      phones: 'Телефон',
+      whatsapp: 'WhatsApp',
+      whatsappAction: 'Написать',
+      instagram: 'Instagram',
+      telegram: 'Telegram',
+      address: 'Адрес',
+      openMap: 'Открыть на карте',
+      mapTitle: 'Расположение ASNAD на карте',
+      mapFallback: 'Если карта не загрузилась, нажмите «Открыть на карте».',
+      note: 'Пожалуйста, заранее свяжитесь с нами, чтобы уточнить наличие и цены.',
+      cta: 'Написать в WhatsApp',
+    },
+    footer: {
+      about:
+        'ASNAD Uzbekistan — бамбуковые панели, декоративные стеновые панели, louver-панели, скрытые двери и жидкие гвозди. Ташкент, строительный рынок Домбиробод.',
+      products: 'Продукция',
+      contact: 'Контакты',
+      follow: 'Соцсети',
+      rights: (year) => `© ${year} ASNAD Uzbekistan. Все права защищены.`,
+      top: 'Наверх',
+      photos: 'Фотографии интерьеров на сайте — примеры (Unsplash).',
+    },
+    messages: {
+      general: 'Здравствуйте! Хочу получить консультацию по продукции ASNAD.',
+      product: (name) => `Здравствуйте! Хочу получить информацию о товаре «${name}» с сайта ASNAD.`,
+      retail: 'Здравствуйте! Хочу узнать о розничной покупке и ценах на продукцию ASNAD.',
+      wholesale: 'Здравствуйте! Хочу узнать об оптовом сотрудничестве по продукции ASNAD.',
+    },
+    image: { fallback: 'Изображение не загрузилось' },
+  },
+}

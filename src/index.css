@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    @apply bg-ivory font-sans text-navy antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: #102a43;
+    color: #f7f6f2;
+  }
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+  :focus-visible {
+    outline: 2px solid #102a43;
+    outline-offset: 3px;
+  }
+  .on-dark :focus-visible,
+  .on-dark:focus-visible {
+    outline-color: #f7f6f2;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-10;
+  }
+
+  /* Small uppercase label with a hairline in front */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[10.5px] font-medium uppercase tracking-[0.16em] text-steel sm:text-[11px] sm:tracking-[0.24em];
+  }
+  .eyebrow::before {
+    content: '';
+    @apply block h-px w-8 bg-current opacity-60;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2.5 rounded-full px-6 text-sm font-medium tracking-wide transition-colors duration-300;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-ivory hover:bg-navy-deep;
+  }
+  .btn-light {
+    @apply btn bg-ivory text-navy hover:bg-white;
+  }
+  .btn-outline {
+    @apply btn border border-navy/25 text-navy hover:border-navy hover:bg-navy hover:text-ivory;
+  }
+  .btn-outline-light {
+    @apply btn border border-ivory/30 text-ivory hover:border-ivory hover:bg-ivory hover:text-navy;
+  }
+
+  /* Underline that grows on hover — used for text links */
+  .link-line {
+    @apply relative inline-flex items-center gap-2;
+  }
+  .link-line::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-current transition-transform duration-500 ease-out;
+  }
+  .link-line:hover::after,
+  .link-line:focus-visible::after {
+    @apply scale-x-100;
+  }
+}
+
+@layer utilities {
+  /* Vertical slat rhythm used as a quiet brand motif */
+  .slats {
+    background-image: repeating-linear-gradient(
+      90deg,
+      currentColor 0 1px,
+      transparent 1px 22px
+    );
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
