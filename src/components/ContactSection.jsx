@@ -84,7 +84,7 @@ export default function ContactSection() {
             </p>
             <iframe
               title={t.contact.mapTitle}
-              src={mapEmbedUrl}
+              src={mapEmbedUrl(lang)}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="relative h-full w-full border-0 grayscale-[0.6] contrast-[1.05]"

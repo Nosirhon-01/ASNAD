@@ -43,6 +43,17 @@ export default function Navbar() {
   const close = () => setOpen(false)
   const menuRef = useDialog(open, close)
 
+  // Mobile menu links: close the menu first (which unlocks page scroll),
+  // then scroll to the section.
+  const goTo = (event, id) => {
+    event.preventDefault()
+    setOpen(false)
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ block: 'start' })
+      history.replaceState(null, '', `#${id}`)
+    }, 30)
+  }
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
     onScroll()
@@ -123,7 +134,7 @@ export default function Navbar() {
             className="on-dark fixed inset-0 z-50 flex flex-col bg-navy-deep text-ivory lg:hidden"
           >
             <div className="container-site flex h-16 items-center justify-between">
-              <a href="#home" onClick={close} aria-label="ASNAD Uzbekistan">
+              <a href="#home" onClick={(event) => goTo(event, 'home')} aria-label="ASNAD Uzbekistan">
                 <BrandMark light />
               </a>
               <button
@@ -148,7 +159,7 @@ export default function Navbar() {
                 >
                   <a
                     href={`#${link.id}`}
-                    onClick={close}
+                    onClick={(event) => goTo(event, link.id)}
                     className="flex items-baseline gap-4 py-4 text-[2rem] leading-none tracking-tight"
                   >
                     <span className="w-6 font-serif text-base italic text-ivory/40">0{i + 1}</span>

@@ -22,5 +22,7 @@ export const contact = {
   mapQuery: 'Dombirobod stroy bozori, Gavhar ko‘chasi 122, Tashkent',
 }
 
-export const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(contact.mapQuery)}&output=embed`
+// `lang` sets the language of the map's own labels and buttons.
+export const mapEmbedUrl = (lang) =>
+  `https://www.google.com/maps?q=${encodeURIComponent(contact.mapQuery)}&hl=${lang}&output=embed`
 export const mapOpenUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.mapQuery)}`

@@ -20,9 +20,12 @@ export default function BusinessCTA() {
         alt=""
         aria-hidden="true"
         width={1800}
-        className="absolute inset-0 h-full w-full object-cover opacity-30"
+        className="absolute inset-y-0 right-0 h-full w-full object-cover lg:w-3/5"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy/60" aria-hidden="true" />
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-navy-deep/95 via-navy-deep/85 to-navy-deep/95 lg:bg-gradient-to-r lg:from-navy-deep lg:from-40% lg:via-navy-deep/80 lg:to-navy-deep/20"
+        aria-hidden="true"
+      />
 
       <div className="container-site relative grid gap-12 py-20 sm:py-28 lg:grid-cols-12 lg:py-32">
         <Reveal className="lg:col-span-7">
@@ -42,9 +45,9 @@ export default function BusinessCTA() {
               <a
                 {...whatsappProps(message)}
                 lang={lang}
-                className="group flex items-center gap-5 rounded-md border border-ivory/20 bg-navy-deep/40 p-5 backdrop-blur-sm transition-colors duration-500 hover:border-ivory hover:bg-ivory hover:text-navy sm:p-6"
+                className="group flex items-center gap-4 rounded-md border border-ivory/20 bg-navy-deep/40 p-4 backdrop-blur-sm transition-colors duration-500 hover:border-ivory hover:bg-ivory hover:text-navy sm:gap-5 sm:p-6"
               >
-                <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-current/30">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-current/30 sm:h-12 sm:w-12">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <span className="flex-1">

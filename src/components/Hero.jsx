@@ -144,10 +144,7 @@ export default function Hero({ onSelectCategory }) {
 
             {/* Direct line — anchors the bottom of the column on large screens */}
             <div className="mt-auto hidden border-t border-navy/15 pt-5 lg:block">
-              <p className="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-steel">
-                <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-                {t.hero.location}
-              </p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-steel">{t.contact.phones}</p>
               <a href={contact.phones[0].href} className="link-line mt-2 text-2xl tracking-tight text-navy">
                 {contact.phones[0].display}
               </a>

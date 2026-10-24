@@ -43,9 +43,9 @@ export default function InteriorShowcase() {
                   className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
                 />
               </ImageReveal>
-              <figcaption className="mt-3 flex items-baseline gap-3 text-navy">
-                <span className="font-serif text-sm italic text-steel">0{i + 1}</span>
-                <span className="text-sm tracking-tight sm:text-[15px]">{item.title[lang]}</span>
+              <figcaption className="mt-4 flex items-baseline gap-3 border-t border-navy/10 pt-3 text-navy">
+                <span className="font-serif text-base italic text-steel">0{i + 1}</span>
+                <span className="text-sm tracking-tight sm:text-base">{item.title[lang]}</span>
               </figcaption>
             </figure>
           ))}

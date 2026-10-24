@@ -13,14 +13,14 @@ export default function Footer({ onSelectCategory }) {
 
   return (
     <footer className="on-dark relative overflow-hidden bg-navy-deep text-ivory">
-      <div className="container-site grid gap-12 pb-10 pt-20 sm:grid-cols-2 lg:grid-cols-12 lg:pt-24">
-        <div className="sm:col-span-2 lg:col-span-4">
+      <div className="container-site grid grid-cols-2 gap-x-6 gap-y-12 pb-10 pt-20 lg:grid-cols-12 lg:pt-24">
+        <div className="col-span-2 lg:col-span-4">
           <BrandMark light />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-ivory/60">{t.footer.about}</p>
           <LanguageSwitcher light className="mt-8" />
         </div>
 
-        <nav aria-label={t.footer.products} className="lg:col-span-3 lg:col-start-6">
+        <nav aria-label={t.footer.products} className="col-span-2 sm:col-span-1 lg:col-span-3 lg:col-start-6">
           <h2 className="text-[11px] uppercase tracking-[0.2em] text-ivory/45">{t.footer.products}</h2>
           <ul className="mt-5 space-y-3">
             {categories.map((cat) => (

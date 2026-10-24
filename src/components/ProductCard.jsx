@@ -10,9 +10,9 @@ import { whatsappProps } from '../utils/whatsapp'
 const placements = {
   feature: { wrap: 'md:col-span-2 lg:col-span-12 lg:grid lg:grid-cols-12 lg:gap-10', image: 'aspect-[4/3] lg:col-span-7 lg:aspect-[16/10]', body: 'lg:col-span-4 lg:col-start-9 lg:self-end' },
   a: { wrap: 'md:col-span-2 lg:col-span-7', image: 'aspect-[4/3]' },
-  b: { wrap: 'lg:col-span-4 lg:col-start-9 lg:mt-48', image: 'aspect-[4/5]' },
+  b: { wrap: 'lg:col-span-4 lg:col-start-9 lg:mt-36', image: 'aspect-[4/5]' },
   c: { wrap: 'lg:col-span-5 lg:-mt-8', image: 'aspect-[4/5]' },
-  d: { wrap: 'lg:col-span-6 lg:col-start-7 lg:mt-40', image: 'aspect-[4/3]' },
+  d: { wrap: 'lg:col-span-6 lg:col-start-7 lg:mt-28', image: 'aspect-[4/3]' },
   e: { wrap: 'md:col-span-2 lg:col-span-8 lg:col-start-3', image: 'aspect-[4/3] md:aspect-[16/9]' },
 }
 
